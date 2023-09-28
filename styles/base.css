@@ -15,6 +15,7 @@ h1{
 }
 h2{
     grid-column: 1/2;
+
 }
 
 header{
@@ -28,7 +29,7 @@ footer{
     background-color: blue;
 }
 nav {
-    background-color: black;
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -37,16 +38,24 @@ nav {
 }
 main{
     margin: auto;
-    width: 50%;
+    width: 98%;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr;
 }
 .card{
-   
+    border-style: double;
+    border-color: blue;
     display: block;
 }
 li{
     list-style-type: none;
     text-align: left;
+}
+.card a::after{
+    content: "✅";
+}
+iframe{
+    width: 90%;
+    height: 90%;
 }
