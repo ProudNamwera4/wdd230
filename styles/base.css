@@ -6,7 +6,7 @@ img{
 
 }
 body {
-  
+
     text-align: center;
     background-color: aqua;
 }
@@ -17,25 +17,25 @@ h2{
     grid-column: 1/2;
 
 }
+h3{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
 
 header{
     display: inline-flex;
-    background-color: blue;
+    background-color: black;
+    color: white;
     justify-content: center;
     margin: auto;
     width: 100%;
 }
 footer{
-    background-color: blue;
+    background-color: black;
+    color: white;
 }
-nav {
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    justify-content:space-between;
-    
-}
+
 main{
     margin: auto;
     width: 98%;
@@ -59,3 +59,14 @@ iframe{
     width: 90%;
     height: 90%;
 }
+.navigation a{
+    color: white;
+    
+}
+.navigation a:hover{
+    color: aqua;
+}
+.card a:hover{
+    color:green ;
+}
+
