@@ -1,0 +1,78 @@
+*{
+    background-color: grey;
+}
+.navigation a{
+    color: white;
+    
+}
+.navigation a:hover{
+    color: aqua;
+}
+.card a:hover{
+    color:green ;
+}
+body{
+    justify-content: center;
+}
+#hero-img{
+    width: 100%;
+}
+section{
+    text-align: center;
+}
+
+/*Mobile view Responsive Menu*/
+@media screen and (max-width: 768px){
+
+    
+    #menu {
+        font-size: 1.5rem;
+        border: 1px solid rgba(0,0,0,.3);
+        padding: 3px 7px 6px;
+        background-color: #eee;
+        color: white;
+         position: absolute;
+        top :0px;
+        right:0px;
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+    
+    #menu.open::before {
+        content: "❎";
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: black;
+        color: white;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+    .navigation li a:hover {
+        background-color: aqua;
+        color: #333;
+        font-weight: 700;
+    }
+    /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+    .open li {
+        display: block;
+        width: 100%;
+    }
+    .open li a {
+        display: block;
+    }
+
+}

@@ -1,0 +1,40 @@
+@media screen and (min-width: 768px){
+    /*Large view menu*/
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        padding: 20px;
+    }
+
+    .navigation li {
+        display:block;
+        flex: 1 1 100%;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #current-events{
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+    #weather-card{
+        grid-column: 2/3;
+        grid-row: 1/2;
+
+    }
+    .spotlights{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+   
+
+
+}
