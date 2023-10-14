@@ -15,12 +15,14 @@ body{
     justify-content: center;
 }
 #hero-img{
+    position: relative;
     width: 100%;
 }
 section{
     text-align: center;
 }
 main{
+    color: #000;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 2fr;
@@ -97,3 +99,25 @@ main{
     }
 
 }
+
+/*Toggle dark mode*/
+#mode{
+    position: sticky;
+    top: 0;
+    margin-top: 5px;
+    margin-left: 80%;
+    font-size: xx-large;
+    
+
+}
+
+/*Join Button*/
+#join-button{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    background-color: green;
+}
+
+   
+  
