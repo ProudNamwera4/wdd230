@@ -39,8 +39,13 @@
         </nav>
     </header>
  
-    <div>
-        <img id="hero-img" src="images/hero.jpg" alt="hero image">
+    <div class="hero">
+        <picture>
+            <source media="(max-width:500px )" srcset="images/hero-small.webp">
+            <source media="(max-width:1000px )" srcset="images/hero-medium.webp">
+            <img src="images/hero-large.webp" alt="Large sized heavy image" width="6429" height="3215">
+        </picture>
+
         <button id="join-button">Join the Chamber</button>
     </div>
    
@@ -54,10 +59,15 @@
         </section>
         <div id="weather-card">
             <h2>Weather</h2>
-            <p>33°C</p><br>
+            <label for="temperature">Temperature in Fahrenheit</label>
+            <input id="temperature" type="number" value="50"><br>
             <p>Partly Cloudy</p><br>
             <p>Humidity: 35%</p><br>
-            <p>Wind Chill: N/A</p><br>
+            <label for="windspeed">Wind speed in miles per hour </label>
+            <input id="windspeed" type="number" value="3">
+            <button id="calculate">Calculate Wind chill</button>
+            
+            <p id="windChill">wind</p>
         </div>
         <section class="spotlights">
             <h2>Member Spotlights</h2>
@@ -90,5 +100,6 @@
         </p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

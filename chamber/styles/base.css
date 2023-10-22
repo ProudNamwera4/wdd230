@@ -119,5 +119,10 @@ main{
     background-color: green;
 }
 
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
    
   
