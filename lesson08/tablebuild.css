@@ -1,0 +1,18 @@
+tr {
+    background-color:black;
+    color: white;
+}
+td,th{
+    width: 40px;
+}
+#t1,#t2{
+    width: 160px;
+}
+#t2{
+    background-color:white ;
+    color: black;
+}
+caption{
+    caption-side: bottom;
+}
+
