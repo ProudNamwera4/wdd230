@@ -1,0 +1,201 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: aqua;
+}
+
+#password1:invalid {
+	background-color: #fff0f3;
+	animation: shaketext 500ms;
+}
+form {
+    margin-top: 5px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+input[type=text], input[type=range]{
+	margin: 1rem;
+	padding: 0.5em;
+}
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+    margin-bottom: 0px;
+}
+
+#rangevalues {
+	display: flex;
+	margin: -20px 0 0 25px;
+	width: 190px;
+    
+}
+input:focus,
+textarea:focus {
+	outline: none;
+}
+#formmessage {
+	visibility: hidden;
+	margin: 10px;
+	padding: 0.5rem;
+	color: red;
+}
+
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+#r {
+	width: 180px;
+	margin-top: -15px;
+}
+form fieldset{
+    margin :2rem 0;
+    border: 1px solid 10px;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form label, form input{
+    display: block;
+    width: 90%;
+    max-width: 20rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    text-align: left;
+    margin: 0 0 2rem 2%;
+}
+#pagerating{
+    margin-bottom: 5px;
+}
+.submitBtn{
+    border: none;
+    background-color: black;
+    color: red;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 90%;
+    max-width: 20rem;
+    margin-top: 35px;
+}
+
+body {
+   position: relative;
+   min-height: 100%;
+   min-height: 100vh;
+    padding: 0 2%;
+    
+}
+
+footer{
+    background-color: black;
+    color:white;
+   
+}img{
+    border-radius: 40%;
+    width: 100px;
+    height: 100px;
+    
+
+}
+/**/
+header{
+    display: inline-flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+/*larger*/
+    /*Large view menu*/
+    @media screen and (min-width: 768px){
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+        display: flex;
+		flex-direction: row;
+        background-color: black;
+        padding: 20px;
+	}
+
+	.navigation li {
+		display:block;
+		flex: 1 1 100%;
+	}
+	
+}
+/*Mobile view Responsive Menu*/
+@media screen and (max-width: 768px){
+
+    
+    #menu {
+        font-size: 1.5rem;
+        border: 1px solid rgba(0,0,0,.3);
+        padding: 3px 7px 6px;
+        background-color: #eee;
+        color: white;
+         position: absolute;
+        top :0px;
+        right:0px;
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+    
+    #menu.open::before {
+        content: "❎";
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: black;
+        color: white;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+    .navigation li a:hover {
+        background-color: aqua;
+        color: #333;
+        font-weight: 700;
+    }
+    /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+    .open li {
+        display: block;
+        width: 100%;
+    }
+    .open li a {
+        display: block;
+    }
+
+}
+
+
+
+
+@keyframes shaketext {
+	25% {
+		transform: translateX(3px);
+	}
+	50% {
+		transform: translateX(-3px);
+	}
+	75% {
+		transform: translateX(3px);
+	}
+}
