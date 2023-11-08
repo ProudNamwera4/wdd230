@@ -1,0 +1,20 @@
+section{
+    background-color: blue;
+    color: lime;
+    margin:5px;
+    text-align: center;
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(333px,1fr));
+}
+h2{
+    color: yellow;
+    text-align: center;
+}
+body{
+    background-color: lightblue;
+}
+h1{
+    color: brown;
+}
