@@ -1,3 +1,5 @@
+
+// footer last modified
 const options = {year : "numeric"};
 document.querySelector("#p").innerHTML = `&copy ${new Date().toLocaleDateString("en-UK", options)} | Proud Namwera | Zimbabwe`;
 
@@ -64,3 +66,4 @@ if (daysArray.length = 0){
 }
 daysArray.push();
 setDaysList();
+

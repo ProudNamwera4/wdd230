@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="description" content = "Marondera Chamber of Commerce - Proud Namwera - promote business interests of the members of the organization">
+    <meta name="og:title" content="Proud Namwera - Marondera Chamber of Commerce">
+    <meta name="author" content="Proud Namwera">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="images/hero.jpg">
+    <meta name="og:url" content="https://proudnamwera4">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <title>Proud Namwera - Marondera Chamber of Commerce</title>
+    
+</head>
+<body>
+    <header>
+        <div id="mode">
+            🌑
+        </div>
+        <!--<img src="" alt="Chamber Logo">-->
+        <h1>Marondera Chamber of Commerce</h1>
+        <nav>
+            
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="#" title="Site Plans">Disvover</a></li>
+                <li><a href="#" title="Chamber">Contact Us</a></li>
+                <li><a href="join.html" title="Join">Join Chamber</a></li>
+            </ul>
+            
+    
+        </nav>
+    </header>
+ 
+    <div class="hero">
+        <picture>
+            <source media="(max-width:500px )" srcset="images/hero-small.webp">
+            <source media="(max-width:1000px )" srcset="images/hero-medium.webp">
+            <img src="images/hero-large.webp" alt="Large sized heavy image" width="6429" height="3215">
+        </picture>
+    </div>
+    <main>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <label id="fname">First Name*<input type="text" name="fname" required></label>
+                <label id="lname">Last Name*<input type="text" name="lname" required></label>
+                <label id="position">Position<input type="text" name="fname" required pattern="[A-Z -]{7,}"></label>
+                
+                <label id="email">Email*<input type="email" name="email" required placeholder="myName@gmail.com"></label>
+                <label id="phone">Mobile Phone Number*<input type="tel" name="phone" required></label>
+                <label id="ogname">Organization's Name*<input type="text" name="name" required></label>
+        
+                <div id="level">Membership Level</div>
+                <label><input type="checkbox" name="editing" value="yes">NP Membership</label>
+                <label><input type="checkbox" name="code" value="yes">Bronze Membership</label>
+                <label><input type="checkbox" name="process" value="yes">Silver Membership</label>
+                <label><input type="checkbox" name="client" value="yes">Gold Membership</label>
+                <label for="description">Organisation's Description<textarea name="description" id="description" cols="30" rows="10"></textarea></label>
+                
+                
+                <div id="timestamp">Timestamp</div>
+                
+            </fieldset>
+            <input type="submit" value="Join Chamber" id="submitBtn">
+        </form>
+
+
+
+
+    </main>
+   
+
+    <footer>
+        <p id="p"> 
+           
+        </p>
+        <p id="lastModified">
+
+        </p>
+    </footer>
+    <script src="scripts/join.js"></script>
+    <script src="scripts/getdates.js"></script>
+   
+</body>
+</html>

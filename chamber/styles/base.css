@@ -138,7 +138,7 @@ main{
   #grid{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-row: 1fr;
+    grid-template-rows: 1fr;
 
   }
   #grid img {
@@ -166,3 +166,39 @@ main{
         grid-column: 1/2;
       }
   }
+/*Join page styling*/
+  form,fieldset {
+    text-align: left;
+    background-color: yellowgreen;
+    color: black;
+}
+form label{
+    display: block;
+    margin: 30px;
+    background-color: green
+   
+}
+form label{
+    display: block;
+    margin: 30px;
+    background-color: yellow;
+    padding: 0;
+    width: 20%;
+}
+#submitBtn{
+    background-color: blue;
+    color: yellow;
+}
+#level{
+    margin-top: 70px;
+    margin-bottom: -20px;
+}
+form div{
+    background-color: green;
+    color: yellow;
+}
+form{
+    width: 100%;
+}
+    
+
