@@ -8,10 +8,6 @@
                 {
                     "url": "/lesson01/holygrail.html",
                     "title": "Holygrail"
-                },
-                {
-                    "url": "/lesson02/design.html",
-                    "title": "Holygrail"
                 }
             ]
         },
@@ -20,7 +16,7 @@
             "links": [
                 {
                     "url": "/lesson02/design.html",
-                    "title": "Holygrail"
+                    "title": "Design"
                 },
                 {
                     "url": "lesson2/design-principles.html",
