@@ -14,18 +14,25 @@ async function getLinks() {
 getLinks();
 
 const displayLinks = (weeks) => {
+
   weeks.forEach((week) => {
-        let activity = document.createElement("a");
-        let li = document.createElement("li");
-        let url = week.links[0].url;
-        let title = week.links[0].title;
+    
+        week.links.forEach((link)=>{
+          let activity = document.createElement("a");
+          let li = document.createElement("li");
 
-        activity.setAttribute("src", url);
-        activity.setAttribute("title", title);
-        activity.textContent = `${week.lesson}| ${title}`;
+          let url = link.url;
+          let title = link.title;
 
-        li.appendChild(activity);
-        list.appendChild(li);
+          activity.setAttribute("href", url);
+          activity.setAttribute("title", title);
+          activity.textContent = `${week.lesson}| ${title}`;
+
+          li.appendChild(activity);
+          list.appendChild(li);
+          
+       
+        })
         
   });
 };
