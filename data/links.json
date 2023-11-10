@@ -1,22 +1,23 @@
+
+
 {
-   
     "lessons": [
         {
             "lesson": "01",
-            "links":[
+            "links": [
                 {
                     "url": "/lesson01/holygrail.html",
                     "title": "Holygrail"
-                
                 },
                 {
                     "url": "/lesson02/design.html",
                     "title": "Holygrail"
                 }
-               
-            ],
+            ]
+        },
+        {
             "lesson": "02",
-            "links":[
+            "links": [
                 {
                     "url": "/lesson02/design.html",
                     "title": "Holygrail"
@@ -25,10 +26,11 @@
                     "url": "lesson2/design-principles.html",
                     "title": "Design Principles Document"
                 }
-            
-            ],
+            ]
+        },
+        {
             "lesson": "03",
-            "links":[
+            "links": [
                 {
                     "url": "images/combinater-exercise.png",
                     "title": "Combinators"
@@ -45,10 +47,11 @@
                     "url": "lesson03/chamber-site-plan.html",
                     "title": "Chamber of Commerce Site Plan"
                 }
-            
-            ],
+            ]
+        },
+        {
             "lesson": "04",
-            "links":[
+            "links": [
                 {
                     "url": "https://codepen.io/Proud-Namwera/pen/oNJaayM",
                     "title": "PsuedoClass Fun"
@@ -57,18 +60,20 @@
                     "url": "chamber/index.html",
                     "title": "Chamber Website"
                 }
-            
-            ],
+            ]
+        },
+        {
             "lesson": "05",
-            "links":[
+            "links": [
                 {
                     "url": "lesson05/bom.html",
                     "title": "Scripture List"
                 }
-            
-            ],
+            ]
+        },
+        {
             "lesson": "06",
-            "links":[
+            "links": [
                 {
                     "url": "lesson05/images/landscape.webp",
                     "title": "WebP"
@@ -77,18 +82,20 @@
                     "url": "lesson06/responsive.images.html",
                     "title": "Responsive Images"
                 }
-            
-            ],
+            ]
+        },
+        {
             "lesson": "07",
-            "links":[
+            "links": [
                 {
                     "url": "lesson07/bom.html",
                     "title": "BOM-localStorage"
                 }
-            
-            ],
+            ]
+        },
+        {
             "lesson": "08",
-            "links":[
+            "links": [
                 {
                     "url": "form-start/index.html",
                     "title": "Form Sart"
@@ -97,10 +104,11 @@
                     "url": "form.html",
                     "title": "Form Page"
                 }
-            
-            ],
+            ]
+        },
+        {
             "lesson": "09",
-            "links":[
+            "links": [
                 {
                     "url": "lesson09/prophets.html",
                     "title": "Latter Day Prophets"
@@ -109,9 +117,7 @@
                     "url": "form.html",
                     "title": "Form Page"
                 }
-            
             ]
-            
         }
     ]
 }

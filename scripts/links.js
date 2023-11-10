@@ -1,32 +1,31 @@
-const baseURL = "https://proudnamwera4.github.io/wdd130/";
-const linksURL = "https://proudnamwera4.github.io/wdd130/data/links.json";
+const baseURL = "https://Proudnamwera4.github.io/wdd230/";
+const linksURL = "https://Proudnamwera4.github.io/wdd230/data/links.json";
 const list = document.querySelector("#activityList");
 
-async function getLinks(){
-    const response = await fetch(linksURL);
+async function getLinks() {
+  const response = await fetch(linksURL);
+  if (response.ok) {
     const data = await response.json();
-    console.log(data);
-    displayLinks(data);
-   
-
+    JSON.stringify(data);
+    //console.log(data)
+    displayLinks(data.lessons);
+  }
 }
 getLinks();
 
 const displayLinks = (weeks) => {
-    weeks.forEach((week) => {
+  weeks.forEach((week) => {
         let activity = document.createElement("a");
         let li = document.createElement("li");
+        let url = week.links[0].url;
+        let title = week.links[0].title;
 
+        activity.setAttribute("src", url);
+        activity.setAttribute("title", title);
+        activity.textContent = `${week.lesson}| ${title}`;
 
-       
-        activity.setAttribute('src',`${week.links.url}`);
-        activity.setAttribute('title', `${week.links.title}`);
-        activity.textContent =`| ${week.links.title}`;
-        
-        
         li.appendChild(activity);
-    
         list.appendChild(li);
-    });
-  }
-
+        
+  });
+};
