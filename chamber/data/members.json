@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Sprint Kings",
+            "adress": "Marasha Crecent,Ruware",
+            "contact": "00263777038901",
+            "websiteURL": "https://www.facebook.com/t1arty?mibextid=ZbWKwL",
+            "image": "images/sprint-kings-logo.jpg",
+            "membership-level": "7"
+        },
+        {
+            "name": "Hunters FC",
+            "adress": "Rudhaka Res",
+            "contact": "00263778254689",
+            "websiteURL": "https://www.facebook.com/theCleverBoys?mibextid=ZbWKwL",
+            "image": "images/huntersfc.jpg",
+            "membership-level": "6"
+        },
+        {
+            "name": "Peterhouse Group of Schools",
+            "adress": "1080 Ighava park",
+            "contact": "00263698745288",
+            "websiteURL": "https://www.facebook.com/peterhousegroupzimbabwe?mibextid=ZbWKwL",
+            "image": "images/peterhouse.jpg",
+            "membership-level": "2"
+        },
+        {
+            "name": "Marondera United",
+            "adress": "Cherutombo South",
+            "contact": "00263789548477",
+            "websiteURL": "http://www.soccer-talents.com/Marondera_United_FC-26_27-12-193-69684.html",
+            "image": "images/mrondera-united-logo.jpg",
+            "membership-level": "5"
+        },
+        {
+            "name": "Knights Chess Academy",
+            "adress": "Gazaland, Marondera",
+            "contact": "002637739277141",
+            "websiteURL": "https://www.facebook.com/knightschessacademyzimbabwe?mibextid=ZbWKwL",
+            "image": "images/kights-chess-club.jpg",
+            "membership-level": "3"
+        },
+        {
+            "name": "Surrey Group FC",
+            "adress": "698 Harare st",
+            "contact": "0771766735",
+            "websiteURL": "https://www.facebook.com/SurreyGroup?mibextid=ZbWKwL",
+            "image": "images/surrey-group.jpg",
+            "membership-level": "6"
+        },
+        {
+            "name": "Herentals FC",
+            "adress": "45 Murehwa Road",
+            "contact": "00263897456287",
+            "websiteURL": "https://www.facebook.com/Herentalscollege.Vabvamburi?mibextid=ZbWKwL",
+            "image": "images/herentals.jpg",
+            "membership-level": "4"
+        }
+    ]
+}
