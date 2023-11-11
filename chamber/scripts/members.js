@@ -1,4 +1,4 @@
-const url = "https://Proudnamwera4.github.io/wdd230/chamber/data/links.json";
+const url = "https://proudnamwera4.github.io/wdd230/chamber/data/members.json";
 
 const cards = document.querySelector('#cards');
 
@@ -25,7 +25,7 @@ const displayCards = (members) => {
         fullName.innerText= `${member.name}` ;
         portrait.setAttribute("src",member.image);
         address.textContent =`${member.address}`;
-        contact.textContent=`${member.birthplace}`
+        contact.textContent=`${member.contact}`
         
         card.appendChild(fullName);
         card.appendChild(address);
