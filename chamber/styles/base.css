@@ -21,7 +21,7 @@ body{
 section{
     text-align: center;
 }
-main{
+#index-main{
     color: #000;
     display: grid;
     grid-template-columns: 1fr;
@@ -202,3 +202,55 @@ form{
 }
     
 
+/*style the directory page*/
+#cards section{
+    text-align: center;
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(333px,1fr));
+}
+#card h2{
+    color: yellow;
+    text-align: center;
+    background-color: black;
+}
+
+#cards img{
+    width: 200px;
+    height: auto;
+    border: 1px solid #fff;
+	box-shadow: 0 0 20px #333;
+    margin-top: 8px;
+}
+#cards a{
+    background-color: aquamarine;
+}
+#card{
+    border-radius: 5px;
+    margin:60px;
+    background-color: darkgrey;
+}
+#card h3{
+    background-color: darkgrey;
+}
+main .directory-menu{
+    align-items: center;
+    width: 100%;
+   
+}
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+    
+}
+.directory-menu  {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+
+}
+
+* {
+	box-sizing: border-box;
+}

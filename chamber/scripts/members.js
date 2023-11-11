@@ -20,17 +20,23 @@ const displayCards = (members) => {
         let portrait = document.createElement("img");
         let address = document.createElement("h3");
         let contact = document.createElement("h3");
+        let link = document.createElement("a");
 
 
         fullName.innerText= `${member.name}` ;
         portrait.setAttribute("src",member.image);
+        portrait.setAttribute("alt","company logo");
         address.textContent =`${member.address}`;
-        contact.textContent=`${member.contact}`
+        contact.textContent=`${member.contact}`;
+        link.setAttribute("href",`${member.websiteURL}`);
+        link.textContent=  `https://www.${member.name}.com`;
+        card.setAttribute("id","card");
         
+        card.appendChild(portrait)
         card.appendChild(fullName);
         card.appendChild(address);
         card.appendChild(contact);
-        card.appendChild(portrait);
+        card.appendChild(link);
     
         cards.appendChild(card);
 
@@ -38,8 +44,19 @@ const displayCards = (members) => {
     });
   }
 
-
-
+  /*Toogle between grid and list*/
+  const gridbutton = document.querySelector("#grid");
+  const listbutton = document.querySelector("#list");
+  
+  gridbutton.addEventListener("click", () => {
+      cards.style.grid= "auto auto auto auto / auto auto auto auto"
+  });
+  
+  listbutton.addEventListener("click", showList);
+  
+  function showList() {
+      cards.style.grid="auto / auto"
+  }
 
 
 
