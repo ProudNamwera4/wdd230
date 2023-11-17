@@ -60,12 +60,19 @@
         </section>
         <div id="weather-card">
             <h2>Weather</h2>
-            <label for="temperature">Temperature in Fahrenheit</label>
-            <input id="temperature" type="number" value="50"><br>
+            <p>Temperature in Fahrenheit<span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+                <p>Humidity<span id="humidity"></span></p>
+                <p>Wind speed in miles per hour<span id="wind-speed"></span></p>
+            </figure>
+            <!--
             <p>Partly Cloudy</p><br>
             <p>Humidity: 35%</p><br>
             <label for="windspeed">Wind speed in miles per hour </label>
             <input id="windspeed" type="number" value="3">
+            -->
             <button id="calculate">Calculate Wind chill</button>
             
             <p id="windChill">wind</p>
@@ -102,5 +109,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
