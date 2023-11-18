@@ -10,6 +10,6 @@ function closeBanner(){
 const date = new Date();
 let day = date.getDay();
 
-if (day == 0|| day == 1|| day ==3){
+if (day == 2|| day == 1|| day ==3){
     closeBanner();
 }
