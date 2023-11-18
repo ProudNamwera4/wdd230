@@ -4,11 +4,11 @@ const captionDesc = document.querySelector("figcaption");
 const humidity = document.querySelector("#humidity");
 const windspeed = document.querySelector("#windspeed");
 
-const url1 = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=18.11&lon=31.32&cnt=3&appid=bc5627345bd0bd83bacbb4a24454ec2d&units=imperial"
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=18.11&lon=31.32&cnt=3&appid=bc5627345bd0bd83bacbb4a24454ec2d&units=imperial"
 
-async function apiFetch(url){
+async function apiFetch(){
     try{
-        const response = await fetch(ur);
+        const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
             displayResults(data);

@@ -254,3 +254,21 @@ main .directory-menu{
 * {
 	box-sizing: border-box;
 }
+
+/*Home page banner*/
+.banner{
+    border-radius: 20px;
+    border-color: red;
+    color: blue;
+    background-color: lightblue;
+    width: 350px;
+    text-align: center;
+    margin-left: 40%;
+}
+.banner h1, .banner h5{
+    background-color: lightblue;
+}
+.closeX{
+    background-color: lightgoldenrodyellow;
+    color: red;
+}
