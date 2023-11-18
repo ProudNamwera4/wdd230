@@ -42,15 +42,25 @@
  
     <div class="hero">
         <picture>
+            
             <source media="(max-width:500px )" srcset="images/hero-small.webp">
             <source media="(max-width:1000px )" srcset="images/hero-medium.webp">
             <img src="images/hero-large.webp" alt="Large sized heavy image" width="6429" height="3215">
+            <h3 id="message"></h3>
+            <div class="banner">
+                
+                <h1>Welcome to the Chamber </h1>
+                <h5>We invite you to our greet and meet!</h5>
+                <h5>Wednesday @ 7:00 pm</h5>
+                
+            </div>
         </picture>
 
         
     </div>
    
     <main id="index-main">
+        
         <section id="current-events">
             <h2>Events</h2>
            
@@ -60,12 +70,12 @@
         </section>
         <div id="weather-card">
             <h2>Weather</h2>
-            <p>Temperature in Fahrenheit<span id="current-temp"></span></p>
+            <p>Temperature in Fahrenheit: <input id="current-temp"></p>
             <figure>
                 <img id="weather-icon" src="" alt="">
                 <figcaption></figcaption>
-                <p>Humidity<span id="humidity"></span></p>
-                <p>Wind speed in miles per hour<span id="wind-speed"></span></p>
+                <p>Humidity: <span id="humidity"></span> </p>
+                <p>Wind speed in miles per hour: <input id="windspeed"></p>
             </figure>
             <!--
             <p>Partly Cloudy</p><br>
@@ -75,7 +85,7 @@
             -->
             <button id="calculate">Calculate Wind chill</button>
             
-            <p id="windChill">wind</p>
+            <p id="windChill"></p>
         </div>
         <section class="spotlights">
             <h2>Member Spotlights</h2>
@@ -107,8 +117,10 @@
 
         </p>
     </footer>
-    <script src="scripts/getdates.js"></script>
-    <script src="scripts/windchill.js"></script>
+    
     <script src="scripts/weather.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/getdates.js"></script>
+    
 </body>
 </html>

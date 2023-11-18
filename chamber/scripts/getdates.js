@@ -49,7 +49,7 @@ const today = Date.now();
 const daysArray = getDaysList() || [];
 
 function getDaysList(){
-    return JSON.parse(localStorage.getItem("daysVisList"));
+    return Number(window.localStorage.getItem("daysVisList"));
 }
 
 function setDaysList(){
@@ -58,11 +58,14 @@ function setDaysList(){
 
 if (daysArray.length = 0){
 	msg.textContent = "'Welcome! Let us know if you have any questions.'"
+msg.style.textAlign = "center"
 }else if(daysArray[daysArray.length-1] = today){
 	msg.textContent = "'Back so soon! Awesome!'";
+msg.style.textAlign = "center"
 }else{
 	let n = (daysArray[daysArray.length-1] - Date.now())/msToDays;
 	msToDays.textContent = "'You last visited n days ago.'";
+	msg.style.textAlign = "center"
 }
 daysArray.push();
 setDaysList();

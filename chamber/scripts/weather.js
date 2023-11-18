@@ -2,13 +2,13 @@ const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 const humidity = document.querySelector("#humidity");
-const windspeed = document.querySelector("#wind-speed");
+const windspeed = document.querySelector("#windspeed");
 
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=18.11&lon=31.32&appid=bc5627345bd0bd83bacbb4a24454ec2d&units=imperial"
+const url1 = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=18.11&lon=31.32&cnt=3&appid=bc5627345bd0bd83bacbb4a24454ec2d&units=imperial"
 
-async function apiFetch(){
+async function apiFetch(url){
     try{
-        const response = await fetch(url);
+        const response = await fetch(ur);
         if (response.ok){
             const data = await response.json();
             displayResults(data);
@@ -28,9 +28,9 @@ function displayResults(data){
     weatherIcon.setAttribute('alt',"weather icon");
     weatherIcon.style.width= '18px';
     weatherIcon.style.height= '18px';
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    currentTemp.value = data.main.temp;
     let desc = data.weather[0].description;
     captionDesc.textContent = `${desc}`;
     humidity.textContent= `${data.main.humidity}`;
-    windspeed.textContent= `${data.wind.speed}`;
+    windspeed.value= data.wind.speed;
 }
