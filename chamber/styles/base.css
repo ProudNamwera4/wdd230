@@ -1,9 +1,22 @@
 *{
-    background-color: grey;
+    background-color:white;
+    box-sizing: border-box;
+    
+}
+header, footer{
+    background-color: yellow;
+}
+#heading{
+    background-color: yellow;
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    background-color: yellow;
 }
 .navigation a{
     color: white;
-    
+    background-color: grey;
 }
 .navigation a:hover{
     color: aqua;
@@ -18,9 +31,11 @@ body{
     position: relative;
     width: 100%;
 }
-section{
+section, section> *{
     text-align: center;
+   background-color: aqua;
 }
+
 #index-main{
     color: #000;
     display: grid;
@@ -251,9 +266,7 @@ main .directory-menu{
 
 }
 
-* {
-	box-sizing: border-box;
-}
+
 
 /*Home page banner*/
 .banner{
@@ -263,7 +276,7 @@ main .directory-menu{
     background-color: lightblue;
     width: 350px;
     text-align: center;
-    margin-left: 40%;
+    margin: auto;
 }
 .banner h1, .banner h5{
     background-color: lightblue;
@@ -271,4 +284,33 @@ main .directory-menu{
 .closeX{
     background-color: lightgoldenrodyellow;
     color: red;
+}
+
+/*w11*/
+section.spotlights div>*{
+    background-color: aqua;
+}
+section.spotlights{
+    background-color: white;
+    padding-bottom: 10px;
+}
+#weather-card,#weather-card>* {
+    text-align: center;
+    background-color: aqua;
+}
+#submitBtn{
+    margin: auto;
+    z-index: 1;
+    width: 10%;
+    text-align: center;
+    height: auto;
+}
+picture{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+picture img, #submitBtn{
+    grid-column: 1/1;
+    grid-row: 1/1;
 }
