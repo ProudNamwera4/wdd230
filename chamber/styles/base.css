@@ -301,7 +301,7 @@ section.spotlights{
 #submitBtn{
     margin: auto;
     z-index: 1;
-    width: 10%;
+    width: 100px;
     text-align: center;
     height: auto;
 }
