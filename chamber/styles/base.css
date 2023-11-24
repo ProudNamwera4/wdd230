@@ -304,6 +304,7 @@ section.spotlights{
 }
 #submitBtn{
     margin: auto;
+
     z-index: 1;
     text-align: center;
     height: auto;
@@ -313,11 +314,20 @@ section.spotlights{
     padding: 10px;
 }
 
-picture{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+#picture-grid{
+   position: relative;
+   width: 100%;
 }
+#picture-grid picture img{
+    width: 100%;
+    height: auto;
+}
+#picture-grid a{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
 picture img, #submitBtn{
     grid-column: 1/1;
     grid-row: 1/1;

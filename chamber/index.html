@@ -24,7 +24,6 @@
         <div id="mode">
             🌑
         </div>
-        <!--<img src="" alt="Chamber Logo">-->
         <h1 id="heading">Marondera Chamber of Commerce</h1>
         <nav>
             
@@ -41,12 +40,15 @@
     </header>
  
     <div class="hero">
-        <picture>
+        <div id="picture-grid">
+            <picture>
+                <source media="(max-width:500px )" srcset="images/hero-small.jpg">
+                <source media="(max-width:1000px )" srcset="images/hero-medium.jpg">
+                <img src="images/hero.jpg" alt="Large sized heavy image" width="6429" height="3215">
+            </picture>
             <a href="join.html" id="submitBtn"><h1>Join Chamber</h1></a>
-            <source media="(max-width:500px )" srcset="images/hero-small.webp">
-            <source media="(max-width:1000px )" srcset="images/hero-medium.webp">
-            <img src="images/hero.jpg" alt="Large sized heavy image" width="6429" height="3215">
-        </picture>
+        </div>
+       
         <h3 id="message">m</h3>
         <div class="banner">
             <button class="closeX">X</button>
