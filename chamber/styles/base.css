@@ -332,3 +332,10 @@ picture img, #submitBtn{
     grid-column: 1/1;
     grid-row: 1/1;
 }
+.navigation a{
+    scale: 5;
+    
+}
+a:active{
+    box-shadow: 2px 2px 5px red;
+}
