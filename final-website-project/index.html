@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proud Namwera - Scoots owner operator rental componay.</title>
+
+    <meta name ="description" content = "Scoots - Proud Namwera - caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.">
+    <meta name="og:title" content="Proud Namwera - Scoots.">
+    <meta name="author" content="Proud Namwera">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="images/mexico-coast.jpg">
+    <meta name="og:url" content="https://proudnamwera4.github.io/wdd230/final-website-project/index.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+</head>
+<body>
+    <header>
+        <h1 id="heading">~Scoots~</h1>
+        <nav>
+            
+            <button id="menu"></button>
+                    <ul class="navigation">
+                        <li><a href="index.html" title="Home">Home</a></li>
+                        <li><a href="rentals.html" title="Rentals">Rentals</a></li>
+                        <li><a href="reservations.html" title="Reservations">Reservations</a></li>
+                        <li><a href="contact.html" title="Contact">Contact</a></li>
+                    </ul>
+            
+        </nav>
+    </header>
+    <div>
+        <picture id="hero">\
+            <img src="images/mexico-coast.jpg" alt="hero images of the coast of mexico" width="2" height="1">
+        </picture>
+    </div>
+    <main>
+        <button>Make a Rental</button>
+        <div id="weather-card">
+            <h2>Weather</h2>
+            <p>Temperature in Fahrenheit: <input id="current-temp"></p>
+            <figure>
+                <img id="weather-icon" src="images/icon.jpg" alt="weather icon">
+                <figcaption></figcaption>
+              
+            </figure>
+            <div>Humidity: <span id="humidity"></span> </div>
+            <div>Wind speed in miles per hour: <input id="windspeed"></div>
+            <!--
+            <p>Partly Cloudy</p><br>
+            <p>Humidity: 35%</p><br>
+            <label for="windspeed">Wind speed in miles per hour </label>
+            <input id="windspeed" type="number" value="3">
+            -->
+            <button id="calculate">Calculate Wind chill</button>
+            
+            <p id="windChill"></p>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="sripts/weather.js"></script>
+    
+</body>
+</html>

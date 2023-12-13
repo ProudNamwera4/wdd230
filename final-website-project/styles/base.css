@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+header, footer{
+    background-color: black;
+    color: green;
+}
+#hero img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/1;
+}
+body{
+    height: 100%;
+}
