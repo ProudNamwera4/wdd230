@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <meta name ="description" content = "Scoots - Proud Namwera - caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.">
     <meta name="og:title" content="Proud Namwera - Scoots.">
     <meta name="author" content="Proud Namwera">
     <meta name="og:type" content="website">
     <meta name="og:image" content="images/mexico-coast.jpg">
     <meta name="og:url" content="https://proudnamwera4.github.io/wdd230/final-website-project/index.html">
-    <title>Rentals</title>
+    <title>Contact</title>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-</head>
 
+</head>
 <body>
     <header>
         <h1 id="heading">~Scoots~</h1>
@@ -37,34 +35,38 @@
             </div>
         </div>    
     </header>
-    <main id="rentals-main">
-        <table>
-            <caption><h2>Pricing</h2></caption>
+    <main>
+        <h1>Contact details for our two seperate loactions</h1>
+        <div id="contactUs">
+            <section>
+                <h2>Near Playa del Carmen-Cozumel Ferry</h2>
+                <p>Contact Number: <a href="">+263 789 035 858</a> </p>
+                <p>Email adress: <a href="">scootscentrodecozumel@gmail.com</a> </p>
+                <p>Facebook: <a href="">https://www.facebook.com/Scoots?mibextid=ZbWKwL</a> </p>
+            </section>
+            <section>
+                <h2>Near The Terminal Puerta Maya(south coast) </h2>
+                <p>Contact Number: <a href=""> +263 777 463 922</a></p>
+                <p>Email adress: <a href="">scootsterminalpuertamaya@gmail.com</a> </p>
+                <p>Facebook: <a href="">https://www.facebook.com/Scoots?mibextid=ZbWKwL</a></p>
+            </section>
+            </section>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d84128.43855889326!2d-87.29937664282117!3d20.434867919680357!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2szw!4v1702537068131!5m2!1sen!2szw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="thanks.html" method="get" id="form" autocomplete="on">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <label id="name">Name*<input type="text" name="name" required></label>
+                <label id="surname">Surname*<input type="text" name="surname" required></label>
+                <label id="email">Email*<input type="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                title="Please enter a valid email address"></label>
+                <label for="comment">Comment<textarea name="comment" id="comment" cols="30" rows="10"></textarea></label>
 
-            <!-- <thead colspan="6">
-                Maximum Rental Pricing
-            </thead>-->
-            <tbody id="tbody" >
-                <tr>
-                    <td colspan="6"><h3>Max Rental Pricing</h3> </td>
-                </tr>
-                <tr>
-                    <td colspan="2"></td>
-                    <td colspan="2"><strong>Reservation</strong></td>
-                    <td colspan="2"><strong>Walk-In</strong></td>
-                </tr>
-                <tr>
-                    <td><strong>Rental Type</strong></td>
-                    <td><strong>Max. Persons</strong></td>
-                    <td><strong>Half Day</strong></td>
-                    <td><strong>Full Day</strong></td>
-                    <td><strong>Half Day<br></strong></td>
-                    <td><strong>Full Day</strong></td>
-                </tr>
+                <input type="submit" value="Contact Scoots" class="submitBtn">
+                        
+            </fieldset>
 
-
-            </tbody>
-        </table>
+        </form>
     </main>
     <footer>
         <p> 
@@ -89,9 +91,9 @@
         </p>
         
     </footer>
-            <script src="scripts/prices.js"></script>
-            <script src="scripts/get-dates.js"></script>
-            <script src="scripts/responsive-menu.js"></script>
-</body>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
 
+</body>
 </html>

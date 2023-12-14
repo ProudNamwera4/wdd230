@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
 </head>
 <body>
@@ -26,17 +27,19 @@
            
             
         </div>
-        <nav>
-            
-            <button id="menu"></button>
-                    <ul class="navigation">
-                        <li><a href="index.html" title="Home">Home</a></li>
-                        <li><a href="rentals.html" title="Rentals">Rentals</a></li>
-                        <li><a href="reservations.html" title="Reservations">Reservations</a></li>
-                        <li><a href="contact.html" title="Contact">Contact</a></li>
-                    </ul>
-            
-        </nav>
+        <div class="mobile-container">
+            <div class="topnav">
+                <a href="index.html" class="active"><strong>Home</strong></a>
+                <div id="myLinks">
+                  <a href="rentals.html"><strong>Rentals</strong> </a>
+                  <a href="reservations.html"><strong> Reservations</strong></a>
+                  <a href="contact.html"><strong> Contact</strong></a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fas fa-bars">Menu</i>
+                </a>
+            </div>
+        </div>    
     </header>
     <div>
         <picture id="hero">
@@ -83,17 +86,29 @@
     <footer>
         <p> 
             &copy;2023 | Proud Namwera |
-            Scoots  <a href="#" class="fa  fa-facebook"></a>
-            <a href="#" class="fa  fa-twitter"></a>
-
-        </p>
+            Scoots
+            <p><a href="contact.html">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank" >
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
         <p id="lastModified">
 
         </p>
+        
     </footer>
     <script src="scripts/weather.js"></script>
     <script src="scripts/temp-max.js"></script>
     <script src="scripts/get-dates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
+
     
 </body>
 </html>

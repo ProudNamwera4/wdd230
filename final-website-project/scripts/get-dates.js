@@ -1,5 +1,5 @@
 const options = {year : "numeric"};
-document.querySelector("p").innerHTML = `&copy ${new Date().toLocaleDateString("en-UK", options)} | Proud Namwera | Zimbabwe`;
+document.querySelector("footer p").innerHTML = `&copy ${new Date().toLocaleDateString("en-UK", options)} | Proud Namwera | Zimbabwe`;
 
 
 let lastModified = document.querySelector("#lastModified");

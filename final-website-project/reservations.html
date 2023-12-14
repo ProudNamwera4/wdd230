@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="description" content = "Scoots - Proud Namwera - caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.">
+    <meta name="og:title" content="Proud Namwera - Scoots.">
+    <meta name="author" content="Proud Namwera">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="images/mexico-coast.jpg">
+    <meta name="og:url" content="https://proudnamwera4.github.io/wdd230/final-website-project/index.html">
+ <title>Reservations</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <h1 id="heading">~Scoots~</h1>
+        <div class="mobile-container">
+            <div class="topnav">
+                <a href="index.html" class="active"><strong>Home</strong></a>
+                <div id="myLinks">
+                  <a href="rentals.html"><strong>Rentals</strong> </a>
+                  <a href="reservations.html"><strong> Reservations</strong></a>
+                  <a href="contact.html"><strong> Contact</strong></a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fas fa-bars">Menu</i>
+                </a>
+            </div>
+        </div>    
+    </header>
+    <main id="reservation-main">
+        <div id="services-agreements">
+            <section>
+                <h2>Rental Services</h2>
+                <p>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
+                <p>Damage insurance is available for purchase.</p>
+                <p>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</p>
+                <p>Fuel charge is not included.</p>
+                <p>Unlimited mileage.</p>
+                <p>Liability insurance is included.</p>
+            </section>
+            <section>
+                <h2>Rental Agreements</h2>
+                <p>A valid drivers license is required in hand at the time of rental.</p>
+                <p>No one under the age of 12 years of age are allowed to ride on the scooters.</p>
+                <p>A $50 security deposit is required to confirm reservations.</p>
+                <p>Rentals may be returned to either physical location.</p>
+                
+            </section>
+        </div>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <div id="level">Please provide the following rental details</div>
+                <label id="date">Date*<input type="text" name="date" required pattern="[A-Z -]{7,}"></label>
+                <label id="period">Period*<input type="text" name="period" required pattern="[0-9]"></label>
+                <label id="rentalType">Rental Type*<input type="text" name="type" required pattern="[A-Z -]{7,}"></label>
+                <label id="phone">Number<input type="number" name="number"></label>
+                <label id="phone">Mobile Phone Number*<input type="tel" name="phone" required></label>
+                
+                <label id="fname">First Name*<input type="text" name="fname" required></label>
+                <label id="lname">Last Name*<input type="text" name="lname" required></label>
+                <label id="email">Email*<input type="email" name="email" required placeholder="myName@gmail.com"></label>
+                <label id="country">Country/Home State<input type="text" name="country" placeholder="England/manchester"></label>
+                <label id="cruiseLine">Cruise Line<input type="text" name="cruise line" placeholder="if applicable"></label>
+        
+                <div id="level">Special Accommodations</div>
+                <label><input type="checkbox" name="client" value="yes">Free delivery</label>
+                <label for="drop-off">Drop-off Requset<textarea name="Drop-off Request" id="drop-off" cols="30" rows="10"></textarea></label>
+                <label for="insurance">Damage Insurance<textarea name="insurance" id="insurance" cols="30" rows="10"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Make Reservation" id="submitBtn">
+        </form>
+
+        
+    </main>
+    <footer>
+        <p> 
+            &copy;2023 | Proud Namwera |
+            Scoots
+            <p><a href="contact.html">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank" >
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+
+        </p>
+        <p id="lastModified">
+
+        </p>
+        
+    </footer>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
+</body>
+</html>

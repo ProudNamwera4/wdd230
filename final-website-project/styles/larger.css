@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px){
+    /*Large view menu*/
+    .topnav i {
+        display: none; /* hide hamburger button */
+    }
+
+    #myLinks {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        padding: 20px;
+    }
+
+    #myLinks a {
+        display:block;
+        flex: 1 1 100%;
+    }
+}

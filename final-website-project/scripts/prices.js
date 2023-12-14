@@ -2,11 +2,11 @@ const url = "https://proudnamwera4.github.io/wdd230/final-website-project/data/p
 
 const tbody = document.querySelector('#tbody');
 
+
 async function getScootsPrices(){
     const response = await fetch(url);
     if (response.ok){
         const data = await response.json()
-        //console.table(data.prophets);
         displayPrices(data.rentalPricing);
     }
 }
@@ -15,6 +15,7 @@ getScootsPrices();
 
 const displayPrices = (scoots) => {
     scoots.forEach((scooter) => {
+        let br = document.createElement("br");
         let tr = document.createElement("tr");
         let rentalType = document.createElement("td");
         let img = document.createElement("img");
@@ -26,9 +27,12 @@ const displayPrices = (scoots) => {
 
 
 
-        rentalType.innerText= `${scooter.type}` ;
+        rentalType.textContent= `${scooter.type}` ;
         img.setAttribute("src",scooter.image);
         img.setAttribute("alt","image of the scooter");
+        img.setAttribute("loading","lazy");
+        img.style.width= "200px"
+        rentalType.appendChild(br);
         rentalType.appendChild(img);
 
         maxPersons.textContent =`${scooter.maxPersons}`;
