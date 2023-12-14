@@ -2,7 +2,7 @@
     "rentalPricing": [
         {
             "type": "~Honda Metro Scooter",
-            "image":"images/hondaMetroScooter.jgp",
+            "image":"images/hondaMetroScooter.jpeg",
             "maxPersons": "1",
             "reservations":{
                 "halfDay": "$20",
@@ -15,7 +15,7 @@
         },
         { 
             "type": "~Honda Dio Scooter",
-            "image":"images/hondaDioScooter.jgp",
+            "image":"images/hondaDioScooter.jpeg",
             "maxPersons": "2",
             "reservations":{
                 "halfDay": "$30",
@@ -28,7 +28,7 @@
         },
         {
             "type": "~Honda PCX150 Scooter",
-            "image":"images/hondaPCX150Scooter.jgp",
+            "image":"images/hondaPCX150Scooter.jpeg",
             "maxPersons": "2",
             "reservations":{
                 "halfDay": "$40",
@@ -41,7 +41,7 @@
          },
         {
             "type": "~Honda Pioneer ATV",
-            "image":"images/hondaPioneerATV.jgp",
+            "image":"images/hondaPioneerATV.jpeg",
             "maxPersons": "4",
             "reservations":{
                 "halfDay": "$50",
@@ -54,7 +54,7 @@
         },
         {
             "type": "~Jeep Wrangler - 4 door with a/c",
-            "image":"images/jeepWrangler-4door.jgp",
+            "image":"images/jeepWrangler-4door.jpeg",
             "maxPersons": "5",
             "reservations":{
                 "halfDay": "$70",
@@ -67,7 +67,7 @@
         },
         {
             "type": "~Jeep Wrangler - 2 door",
-            "image":"images/jeepWrangler-2door.jgp",
+            "image":"images/jeepWrangler-2door.jpeg",
             "maxPersons": "4",
             "reservations":{
                 "halfDay": "$60",

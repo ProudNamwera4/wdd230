@@ -17,6 +17,7 @@ const displayPrices = (scoots) => {
     scoots.forEach((scooter) => {
         let tr = document.createElement("tr");
         let rentalType = document.createElement("td");
+        let img = document.createElement("img");
         let maxPersons = document.createElement("td");
         let rHalfDay = document.createElement("td");
         let rFullDay = document.createElement("td");
@@ -24,10 +25,12 @@ const displayPrices = (scoots) => {
         let fullDay = document.createElement("td");
 
 
+
         rentalType.innerText= `${scooter.type}` ;
-        /*portrait.setAttribute("src",member.image);
-        portrait.setAttribute("alt","company logo");
-        */
+        img.setAttribute("src",scooter.image);
+        img.setAttribute("alt","image of the scooter");
+        rentalType.appendChild(img);
+
         maxPersons.textContent =`${scooter.maxPersons}`;
         rHalfDay.textContent=`${scooter.reservations.halfDay}`;
         rFullDay.textContent=`${scooter.reservations.fullDay}`;
