@@ -20,6 +20,12 @@
 <body>
     <header>
         <h1 id="heading">~Scoots~</h1>
+        <div class="banner">
+            <button class="closeX">X</button>
+            <h1 id="temp-max">Welcome to the Scoots Reservations </h1>
+           
+            
+        </div>
         <nav>
             
             <button id="menu"></button>
@@ -33,38 +39,61 @@
         </nav>
     </header>
     <div>
-        <picture id="hero">\
+        <picture id="hero">
+            <source media="(max-width:500px )" srcset="images/mexico-coast-small.jpg">
+            <source media="(max-width:1000px )" srcset="images/mexico-coast-medium.jpg">
             <img src="images/mexico-coast.jpg" alt="hero images of the coast of mexico" width="2" height="1">
         </picture>
+        <button id="rental-btn">Make a Rental</button>
     </div>
     <main>
-        <button>Make a Rental</button>
+        <div class="rental-types">
+            <section>
+                <h2>Honda Motor Scooters</h2>
+                <p>Honda Metropolitan (49cc) - 1 person</p>
+                <p>Honda Dio (110cc) - 2 person</p>
+                <p>Honda PCX150 (149cc) - 2 person</p>
+            </section>
+            
+            <section>
+                <h2>Jeeps</h2>
+                <p>Jeep Wrangler - 4 door manuel with A/C - 5 person</p>
+                <p>Jeep Wrangler - 2 door - open air - manuel - 4 person</p>
+            </section>
+            <section>
+                <h2>Side-by-Side ATVs</h2>
+                <p>Honda Pioneer 1000 - 4 person</p>
+            </section>
+        </div>
+        
         <div id="weather-card">
             <h2>Weather</h2>
-            <p>Temperature in Fahrenheit: <input id="current-temp"></p>
+            <p id="current-temp"></p>
             <figure>
                 <img id="weather-icon" src="images/icon.jpg" alt="weather icon">
                 <figcaption></figcaption>
               
             </figure>
             <div>Humidity: <span id="humidity"></span> </div>
-            <div>Wind speed in miles per hour: <input id="windspeed"></div>
-            <!--
-            <p>Partly Cloudy</p><br>
-            <p>Humidity: 35%</p><br>
-            <label for="windspeed">Wind speed in miles per hour </label>
-            <input id="windspeed" type="number" value="3">
-            -->
-            <button id="calculate">Calculate Wind chill</button>
-            
-            <p id="windChill"></p>
+            <div id="windspeed"> </div>
+
         </div>
 
     </main>
     <footer>
+        <p> 
+            &copy;2023 | Proud Namwera |
+            Scoots  <a href="#" class="fa  fa-facebook"></a>
+            <a href="#" class="fa  fa-twitter"></a>
 
+        </p>
+        <p id="lastModified">
+
+        </p>
     </footer>
-    <script src="sripts/weather.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/temp-max.js"></script>
+    <script src="scripts/get-dates.js"></script>
     
 </body>
 </html>

@@ -10,6 +10,100 @@ header, footer{
     height: auto;
     aspect-ratio: 2/1;
 }
+#hero{
+    position: relative;
+}
+#rental-btn{
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    padding: 8px;
+    
+}
 body{
     height: 100%;
 }
+#weather-icon{
+    width: 500px;
+}
+#weather-card{
+    background-color: dimgrey;
+    color: deepskyblue;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.rental-types{
+    background-color: lavender;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(490px,1fr));
+    grid-gap: 10px;
+}
+.rental-types section{
+    margin: auto;
+    background-color: deepskyblue;
+    padding: 15px;
+}
+#message{
+    background-color: brown;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+}
+/*Maximum temperature message*/
+.banner{
+    border-radius: 20px;
+    border-color: red;
+    color: blue;
+    background-color: lightblue;
+    width: 350px;
+    text-align: center;
+    margin: auto;
+}
+.banner h1, .banner h5{
+    background-color: lightblue;
+}
+.closeX{
+    background-color: lightgoldenrodyellow;
+    color: red;
+}
+
+/*social media icons*/
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.ha:hover{
+    opacity: 0.7;
+}
+.fa-facebook{
+    background-color: #3b5998;
+    color: white;
+}
+.fa-twitter{
+    background-color: #55ACEE;
+    color: white;
+}
+
+/*Pricing table*/
+table caption {
+    color: var(--navy);
+    font-weight: 700;
+  }
+  
+  th {
+    background-color: var(--darkgray);
+    color: #fff;
+  }
+  
+  th,
+  td {
+    border: var(--bord);
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
